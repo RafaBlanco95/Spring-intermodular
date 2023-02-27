@@ -1,8 +1,0 @@
-spring:
- datasource:
-  mysql://root:mI7psb3FPmD7HjUXj7cz@containers-us-west-18.railway.app:7200/railway
-  name: Spring-intermodular
-
- sql:
-  init:
-   mode: always
