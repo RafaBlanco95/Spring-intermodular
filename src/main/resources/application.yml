@@ -7,6 +7,4 @@ spring:
     password: ${PROD_DB_PASSWORD}
     name: Spring-intermodular
 
-  sql:
-    init:
-      mode: always
+
