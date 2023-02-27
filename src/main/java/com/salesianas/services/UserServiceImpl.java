@@ -1,10 +1,12 @@
 package com.salesianas.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.salesianas.models.User;
 import com.salesianas.repositories.UserRepository;
 
+@Service
 public class UserServiceImpl implements UserServiceI{
 
 	@Autowired
