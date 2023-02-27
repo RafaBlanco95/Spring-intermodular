@@ -6,5 +6,6 @@ spring:
     username: ${PROD_DB_USERNAME}
     password: ${PROD_DB_PASSWORD}
     name: Spring-intermodular
+    initialization-mode: always
 
 
