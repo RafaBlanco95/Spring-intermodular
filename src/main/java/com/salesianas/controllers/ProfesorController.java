@@ -29,7 +29,7 @@ import com.salesianas.services.PracticaServiceI;
 import com.salesianas.services.ProfesorServiceI;
 
 @RestController
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/profesores")
 public class ProfesorController {
 

@@ -27,7 +27,7 @@ import com.salesianas.repositories.Profesor;
 import com.salesianas.services.PracticaServiceI;
 
 @RestController
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/practicas")
 public class PracticaController {
 

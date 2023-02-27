@@ -14,7 +14,7 @@ import com.salesianas.models.User;
 import com.salesianas.services.UserServiceI;
 
 @RestController
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/usuarios")
 public class UserController {
 

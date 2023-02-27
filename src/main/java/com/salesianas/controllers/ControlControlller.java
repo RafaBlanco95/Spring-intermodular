@@ -26,7 +26,7 @@ import com.salesianas.repositories.Control;
 import com.salesianas.services.ControlServiceI;
 
 @RestController
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/controles")
 public class ControlControlller {
 
