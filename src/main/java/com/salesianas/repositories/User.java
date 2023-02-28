@@ -1,4 +1,4 @@
-package com.salesianas.models;
+package com.salesianas.repositories;
 
 
 import javax.persistence.*;
@@ -7,8 +7,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
 @Entity
-@Table(name = "users", uniqueConstraints = { @UniqueConstraint(columnNames = "username"),
-		@UniqueConstraint(columnNames = "email") })
+@Table(name = "users")
 public class User {
 
 	@Id

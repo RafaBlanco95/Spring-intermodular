@@ -1,9 +1,11 @@
 package com.salesianas.services;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.salesianas.models.User;
+import com.salesianas.repositories.User;
 import com.salesianas.repositories.UserRepository;
 
 @Service
@@ -28,6 +30,24 @@ public class UserServiceImpl implements UserServiceI{
 		}
 		
 		return flag;
+	}
+
+	@Override
+	public User buscarPorNombreDeUsuario(String nombreDeUsuario) {
+		
+		return userRepo.findByUsername(nombreDeUsuario);
+	}
+
+	@Override
+	public User modificarUsuario(User user) {
+		
+		return userRepo.save(user);
+	}
+
+	@Override
+	public Optional<User> buscarPorIdOptional(Long id) {
+		
+		return userRepo.findById(id);
 	}
 
 }
